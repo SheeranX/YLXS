@@ -1,0 +1,125 @@
+@import url('../global.less');
+
+.theme
+(
+  @color-green:#1caab2;
+  @color-green-deep:#009388;
+  @color-green-light:#e8f9f9;
+  @color-black:#3e3e3e;
+  @color-warning:#ff9900;
+  @color-info:#2b85e4;
+  @color-primary-light:#5cadff;
+  @color-white:#fff;
+  @color-pink:#ffeae3;
+  @color-error:#ed4014;
+  @color-disabled:#c5c8ce;
+  @color-light-gray:#ededed;
+)
+{
+  /*字体颜色及背景色*/
+.bg-green{
+  background: @color-green
+}
+
+.bg-green-deep{
+  background: @color-green-deep;
+}
+
+.bg-green-light{
+  background: @color-green-light;
+}
+
+.bg-gray-light{
+  background: @color-light-gray;
+}
+
+.bg-gray{
+  background:  @color-disabled;
+}
+
+.bg-white{
+  background: @color-white;
+}
+.green{
+  color: @color-green;
+}
+.green-deep{
+  color: @color-green-deep;
+}
+
+.error{
+  color: @color-error;
+}
+
+.white{
+  color: @color-white;
+}
+
+.black{
+  color: @color-black;
+}
+
+.bule{
+  color: @color-info;
+}
+
+.gray{
+  color: @color-disabled;
+}
+.border-btm{
+  border-bottom: 2px solid  @color-green!important;
+}
+  .index-active a{
+        .bg-green;
+        .white!important;
+    }
+    .nav-menu ul li a:hover{
+        .bg-green;
+        .white;
+    }
+    .nav-menu .nuxt-link-active{
+       .bg-white;
+       .black;
+    }
+    .nav-menu .nuxt-link-exact-active{
+      .bg-green;
+      .white!important;
+    }
+   .left-num-item-list li a:hover{
+        .border-btm;
+        .green;
+   }
+    .left-nav .nuxt-link-active{
+        border-bottom: 2px solid #ffffff;
+    }
+    .left-nav .nuxt-link-exact-active{
+        .green;
+        .border-btm
+    }
+    .collapse-nav ul li a{
+      .black;
+  }
+   .collapse-nav ul li {
+     height: 30px;
+     padding: 40px;
+  }
+  .collapse-nav .nuxt-link-active{
+     .bg-white;
+     .black;
+  }
+  .collapse-nav .nuxt-link-exact-active{
+       .green!important;
+  }
+}
+
+.theme-default{
+    .theme()
+}
+
+.theme-red{
+    .theme(
+        @color-green:red;
+        @color-green-deep:#930000;
+        @color-green-light:#f36d6d;
+    )
+}
